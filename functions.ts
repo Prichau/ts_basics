@@ -6,7 +6,8 @@ export default multiplyNumbers;
 
 export const addStrings = (str1: string, str2: string='hiopluk'): string => `${str1}  ${str2}`;
 
-export const format=(title: string, cover: string|number)=>
+type formatFunction=(title: string, cover: string|number)=> string;
+export const format:formatFunction=(title, cover)=>
     `${title} ${cover}`;
 
 export const printFormat=(title: string, cover: string|number)=>{
@@ -30,7 +31,7 @@ export interface Langauge{
     lang3: string;
 }
 
-export const Language=(lang: Langauge)=>
+export const printLanguage=(lang: Langauge)=>
     console.log(`${lang.lang1} ${lang.lang2} ${lang.lang3}`);
 
 export const langauge3=(lang1:string, lang2: string, lang3: string)=>`${lang1} ${lang2} ${lang3}`;
