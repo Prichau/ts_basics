@@ -1,4 +1,4 @@
-import multiplyNumbers, { Language, addStrings, fetchData, format, introduce, printFormat } from "./functions";
+import multiplyNumbers, { Language, addStrings, addStrings3, addStrings4, fetchData, format, introduce, langauge3, language8, printFormat } from "./functions";
 
 console.log(multiplyNumbers(2,3));
 console.log(multiplyNumbers(2,0));
@@ -10,3 +10,6 @@ printFormat('kiki', 'kaka');
 fetchData('https://github.com/Prichau/ts_basics/blob/main/basics.ts').then(data=>console.log(data));
 console.log(introduce('hi', 'jj', 'kiki', 'kaka'));
 Language({lang1: 'spanish', lang2:'konkani', lang3:'italian'});
+console.log(addStrings3('hola', 'javo'));
+console.log(addStrings4('chah'));
+console.log(language8);
